@@ -8,17 +8,17 @@ public class GunSway : MonoBehaviour
     [Header("Sway Settings")]
     public bool toggleSway = true;
     [Space]
-    public float amount;
-    public float maxSway;
-    public float smoothAmount;
+    public float amount = 0.2f;
+    public float maxSway = 0.06f;
+    public float smoothAmount = 1f;
 
     [Header("Tilt Settings")]
     public bool toggleTilt = true;
     [Space]
-    public float tiltAmount;
-    public float maxTiltSway;
-    public float smoothAmountTilt;
-    public bool tiltDirectionX, tiltDirectionY, tiltDirectionZ;
+    public float tiltAmount = 2f;
+    public float maxTiltSway = 6f;
+    public float smoothAmountTilt = 12f;
+    public bool tiltDirectionX = true, tiltDirectionY = true, tiltDirectionZ = true;
 
     Vector3 initialPosition;
     Quaternion initialRotation;
